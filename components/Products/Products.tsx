@@ -58,16 +58,16 @@ const Products = () => {
               m={1}
             >
               {product.title}
-              <ProductModal
-                isOpen={isOpen}
-                onClose={onClose}
-                newData={newData}
-                newCompany={newCompany}
-              ></ProductModal>
             </Button>
           ))}
         </Box>
       ))}
+      <ProductModal
+        isOpen={isOpen}
+        onClose={onClose}
+        newData={newData}
+        newCompany={newCompany}
+      ></ProductModal>
     </>
   );
 };
